@@ -10,7 +10,7 @@ void setup() {
 }
 void loop(){
   Serial.println(digitalRead(A0)); 
-  Serial.println(digitalRead(right));
+  Serial.println(digitalRead(A1));
   if(digitalRead(A0)==0 && digitalRead(A1)==0){
     motor1.run(FORWARD);
     motor1.setSpeed(150);
